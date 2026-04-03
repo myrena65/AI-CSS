@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI для SMM | Блог Анастасии Коноваловой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">AI.SMM.Lab</div>
+            <ul class="nav-links">
+                <li><a href="#about">Об авторе</a></li>
+                <li><a href="#tools">Инструменты</a></li>
+                <li><a href="#stats">Эффективность</a></li>
+                <li><a href="#materials">📚 Материалы</a></li> <!-- НОВЫЙ ПУНКТ -->
+            </ul>
+            <button class="theme-toggle" aria-label="Переключить тему">
+                <svg id="theme-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                </svg>
+            </button>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Нейросети для работы с соцсетями</h1>
+            <p>Как искусственный интеллект трансформирует создание контента, аналитику и коммуникацию с аудиторией.
+                Практический обзор от SMM-эксперта.</p>
+            <a href="#tools" class="btn">Изучить инструменты</a>
+        </div>
+    </section>
+
+<section id="about">
+    <div class="container about">
+        <div class="avatar">
+            <img src="1.jpg" alt="Коновалова Анастасия">
+        </div>
+        <div>
+            <h2>Об авторе</h2>
+            <p><strong>Коновалова Анастасия</strong> — преподаватель ИТ-технологий с экспертизой в цифровом маркетинге и
+                SMM. Специализируюсь на интеграции генеративного ИИ в образовательные и коммерческие процессы: от
+                автоматизации контент-производства до аналитики аудитории и построения масштабируемых воронок.</p>
+            <p>Мой подход: объяснять сложное просто, а рутину — делегировать алгоритмам. Автор методик по внедрению
+                нейросетей в рабочие процессы педагогов, фрилансеров и digital-команд.</p>
+            <div class="tags">
+                <span class="tag">EdTech-маркетинг</span>
+                <span class="tag">AI-интеграция в обучение</span>
+                <span class="tag">Data-грамотность</span>
+                <span class="tag">Алгоритмическое мышление</span>
+                <span class="tag">Нейросети для педагогов</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="tools">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom: 30px;">Ключевые AI-инструменты</h2>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="text">📝 Текст & Коммуникация</button>
+                <button class="tab-btn" data-tab="visual">🎨 Визуал & Видео</button>
+                <button class="tab-btn" data-tab="analytics">📊 Аналитика & Данные</button>
+            </div>
+
+            <div id="text" class="tab-content active">
+                <div class="grid">
+                    <div class="card" onclick="toggleCard(this)">
+                        <span class="badge">Яндекс</span>
+                        <h3>YandexGPT</h3>
+                        <p>Генерация постов, сценариев и ответов на комментарии в стиле бренда.</p>
+                        <div class="details">
+                            <ul style="margin-top:10px; padding-left:20px; color:var(--text-secondary);">
+                                <li>Поддержка нескольких языков для мультилокальных кампаний</li>
+                                <li>Автоматизация ответов в Direct и под постами</li>
+                                <li>Сохранение тональности и фирменного голоса</li>
+                            </ul>
+                        </div>
+                        <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="card" onclick="toggleCard(this)">
+                        <span class="badge">Сбер</span>
+                        <h3>GigaChat</h3>
+                        <p>Модерация, интерактивные механики и поддержка диалогов в реальном времени.</p>
+                        <div class="details">
+                            <ul style="margin-top:10px; padding-left:20px; color:var(--text-secondary);">
+                                <li>Фильтрация спама и негативных комментариев</li>
+                                <li>Генерация идей для конкурсов и игровых механик</li>
+                                <li>Интеграция с экосистемой Сбера для лояльности</li>
+                            </ul>
+                        </div>
+                        <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="card" onclick="toggleCard(this)">
+                        <span class="badge">Поиск</span>
+                        <h3>Perplexity</h3>
+                        <p>Мгновенный доступ к проверенной информации для экспертного контента.</p>
+                        <div class="details">
+                            <ul style="margin-top:10px; padding-left:20px; color:var(--text-secondary);">
+                                <li>Автоматическое цитирование источников</li>
+                                <li>Парсинг актуальных данных из соцсетей</li>
+                                <li>Сокращение времени на фактчекинг в 3-5 раз</li>
+                            </ul>
+                        </div>
+                        <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div id="visual" class="tab-content">
+                <div class="grid">
+                    <div class="card" onclick="toggleCard(this)">
+                        <span class="badge">Sber AI</span>
+                        <h3>Kandinsky 5.0</h3>
+                        <p>Фотореалистичные изображения, анимации и обложки для постов и Stories.</p>
+                        <div class="details">
+                            <ul style="margin-top:10px; padding-left:20px; color:var(--text-secondary);">
+                                <li>Высокая детализация и естественность текстур</li>
+                                <li>Генерация анимированных элементов</li>
+                                <li>Используется топовыми брендами для визуального апгрейда</li>
+                            </ul>
+                        </div>
+                        <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="card" onclick="toggleCard(this)">
+                        <span class="badge">Коллаб</span>
+                        <h3>Шедеврум</h3>
+                        <p>Платформа для совместного творчества с библиотекой стилей.</p>
+                        <div class="details">
+                            <ul style="margin-top:10px; padding-left:20px; color:var(--text-secondary);">
+                                <li>Командный доступ и версионирование проектов</li>
+                                <li>Шаблоны для Stories, Reels и баннеров</li>
+                                <li>Популярна в digital-агентствах и среди иллюстраторов</li>
+                            </ul>
+                        </div>
+                        <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="card" onclick="toggleCard(this)">
+                        <span class="badge">Генерация</span>
+                        <h3>AI-видео</h3>
+                        <p>Создание тизеров, рекламных роликов и динамичных Stories без монтажа.</p>
+                        <div class="details">
+                            <ul style="margin-top:10px; padding-left:20px; color:var(--text-secondary);">
+                                <li>Адаптация под форматы TikTok, Reels, Shorts</li>
+                                <li>Интуитивный интерфейс для непрофессионалов</li>
+                                <li>Экспорт в разные форматы с сохранением качества</li>
+                            </ul>
+                        </div>
+                        <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div id="analytics" class="tab-content">
+                <div class="grid">
+                    <div class="card" onclick="toggleCard(this)">
+                        <span class="badge">Data</span>
+                        <h3>DeepSeek</h3>
+                        <p>Анализ конкурентов, мониторинг трендов и прогнозирование кампаний.</p>
+                        <div class="details">
+                            <ul style="margin-top:10px; padding-left:20px; color:var(--text-secondary);">
+                                <li>Выявление успешных стратегий конкурентов</li>
+                                <li>Отслеживание вирусных тем в реальном времени</li>
+                                <li>Настраиваемые метрики под бизнес-задачи</li>
+                            </ul>
+                        </div>
+                        <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="card" onclick="toggleCard(this)">
+                        <span class="badge">Alibaba</span>
+                        <h3>Qwen</h3>
+                        <p>Мультиязычность, анализ тональности и защита от фейков.</p>
+                        <div class="details">
+                            <ul style="margin-top:10px; padding-left:20px; color:var(--text-secondary);">
+                                <li>Качественный перевод и локализация</li>
+                                <li>Сентимент-анализ отзывов и комментариев</li>
+                                <li>Обнаружение ботов и накрученных аккаунтов</li>
+                            </ul>
+                        </div>
+                        <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="card" onclick="toggleCard(this)">
+                        <span class="badge">Визуализация</span>
+                        <h3>Ideogram</h3>
+                        <p>Автоматическое создание инфографики и диаграмм из данных.</p>
+                        <div class="details">
+                            <ul style="margin-top:10px; padding-left:20px; color:var(--text-secondary);">
+                                <li>Преобразование метрик в наглядные графики</li>
+                                <li>Адаптация под гайдлайны каждой соцсети</li>
+                                <li>Ускорение принятия решений маркетологами</li>
+                            </ul>
+                        </div>
+                        <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom: 10px;">Влияние AI на эффективность SMM</h2>
+            <p style="text-align:center; color:var(--text-secondary); margin-bottom: 30px;">Данные на основе отраслевых
+                исследований и практики внедрения (Digital Hype Research, 2024)</p>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-num" data-target="65">0</div>
+                    <div class="stat-label">Сокращение времени на контент</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num" data-target="42">0</div>
+                    <div class="stat-label">Рост вовлечённости (Engagement)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num" data-target="3.2">0</div>
+                    <div class="stat-label">Увеличение конверсии из Stories</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num" data-target="89">0</div>
+                    <div class="stat-label">Точность прогнозирования трендов</div>
+                </div>
+            </div>
+    
+            <!-- БЛОК С МАТЕРИАЛАМИ МАСТЕР-КЛАССА -->
+                          
+            <div style="text-align:center; margin-top:30px;">
+                <p >Интеграция нейросетей
+                    способствует не только росту показателей взаимодействия аудитории, но и оптимизации внутренних
+                    процессов маркетинга. Будущее SMM — в гибридных моделях, где AI берёт на себя рутину, а человек
+                    фокусируется на стратегии и креативе.</p>
+            </div>
+        </div>
+    </section>
+<section id="materials">
+    <div class="container">
+        <h2 style="text-align:center; margin-bottom: 15px;">📚 Материалы мастер-класса</h2>
+        <p
+            style="text-align:center; color:var(--text-secondary); margin-bottom: 50px; max-width: 700px; margin-left: auto; margin-right: auto;">
+            Скачайте все материалы одним кликом — презентация, чек-лист, промпты </p>
+
+        
+
+        <div class="masterclass-content">
+            <h3>🎓 Материалы мастер-класса</h3>
+                        <a href="https://disk.yandex.ru/d/wk6m4GjzsRnd9w" target="_blank" class="masterclass-btn">
+                <span>Скачать материалы</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 11l5 5 5-5M12 4v12" />
+                </svg>
+            </a>
+        </div>
+        <div class="masterclass-badge">
+            <span>Бесплатно</span>
+        </div>
+        </div>
+</section>
+    <footer>
+        <div class="container">
+            <p>© 2024–2026 Коновалова Анастасия. Все права защищены.</p>
+            <p style="font-size:0.9rem; margin-top:8px;">Материал основан на обзоре современных AI-инструментов для
+                digital-маркетинга.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        const themeBtn = document.querySelector('.theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const sunPath = "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M12 8a4 4 0 100 8 4 4 0 000-8z";
+        const moonPath = "M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z";
+
+        function setTheme(isDark) {
+            document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            themeIcon.querySelector('path').setAttribute('d', isDark ? moonPath : sunPath);
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setTheme(true);
+        }
+
+        themeBtn.addEventListener('click', () => {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            setTheme(!isDark);
+        });
+
+        // Tabs
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Expandable Cards
+        function toggleCard(card) {
+            card.classList.toggle('open');
+        }
+
+        // Scroll Animations & Counter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    if (entry.target.id === 'stats') {
+                        animateCounters();
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(sec => observer.observe(sec));
+
+        function animateCounters() {
+            document.querySelectorAll('.stat-num').forEach(el => {
+                if (el.dataset.animated) return;
+                const target = parseFloat(el.dataset.target);
+                const isFloat = target % 1 !== 0;
+                const duration = 1500;
+                const start = performance.now();
+
+                function step(now) {
+                    const progress = Math.min((now - start) / duration, 1);
+                    const value = progress * target;
+                    el.textContent = isFloat ? value.toFixed(1) : Math.round(value);
+                    if (progress < 1) requestAnimationFrame(step);
+                }
+                el.dataset.animated = "true";
+                requestAnimationFrame(step);
+            });
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+        // ===== ЗАКРЕПЛЕННАЯ НАВИГАЦИЯ - ЭФФЕКТ СЖАТИЯ =====
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // ===== КНОПКА "ВЕРНУТЬСЯ НАВЕРХ" =====
+            const scrollTopBtn = document.createElement('button');
+            scrollTopBtn.className = 'scroll-top';
+            scrollTopBtn.innerHTML = `
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+`;
+            document.body.appendChild(scrollTopBtn);
+
+            // Показываем/скрываем кнопку
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollTopBtn.classList.add('show');
+                } else {
+                    scrollTopBtn.classList.remove('show');
+                }
+            });
+
+            // Плавная прокрутка наверх
+            scrollTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // ===== АКТИВНЫЕ ССЫЛКИ В НАВИГАЦИИ ПРИ СКРОЛЛЕ =====
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+    </script>
+</body>
+
+</html>
